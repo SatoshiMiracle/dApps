@@ -10,7 +10,6 @@ contract Arbitrage {
   address public factory = 0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f;
   uint constant deadline = 1 days;
   IUniswapV2Router02 public sushiRouter = IUniswapV2Router02(0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F);
-  //address approvedSender = address(0x500e126c171d6a0f220C5461981f651D18f4De98);
   string public approvedSender = "";
 
   constructor() public payable {
