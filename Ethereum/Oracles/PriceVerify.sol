@@ -53,7 +53,7 @@ contract PriceDelta {
         return amountOut;
     }
 
-    // @dev Function returns the delta between the off chain price to the on chain price, in respect.
+    // @dev Function returns the delta between the off chain price to the on chain price, respectively.
     //  @param `AggAddress` should be the aggregator pair address set by Chainlink.
     //  @param `factory` is the factory address of Uniswap.
     //  @param `token0` is the contract address of the numerator.
