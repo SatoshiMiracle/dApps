@@ -7,7 +7,7 @@ contract bodyGuard {
   address payable owner;
   address trustee;
   uint oneYear = 31540000;
-  uint[] storage timestamps = new uint[](120);
+  uint[] storage timestamps[120];
   
   constructor(_address) public payable {
     owner = address(_address);
