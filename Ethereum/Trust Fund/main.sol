@@ -16,11 +16,6 @@ contract bodyGuard {
   
   function deposit() public payable {}
   
-  function withdraw(_amount) public {
-    assert(msg.sender == trustee);
-    uint amount = address(this).balance if _amount != 0 else _amount;
-  }
-  
   function getBalance() public returns (uint) {
     uint amount = address(this).balance;
     return amount;
